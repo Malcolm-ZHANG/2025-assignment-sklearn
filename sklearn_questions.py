@@ -215,7 +215,6 @@ class MonthlySplit(BaseCrossValidator):
         idx_test : ndarray
             The testing set indices for that split.
         """
-
         dates = self._get_dates(X)
 
         month_period = dates.to_period("M")
